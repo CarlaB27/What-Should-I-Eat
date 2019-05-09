@@ -1,0 +1,19 @@
+{
+  "name": "capstone",
+  "version": "1.0.0",
+  "description": "A web app to find recipes",
+  "main": "index.js",
+  "scripts": {
+    "test": "export NODE_ENV=test && jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CarlaB27/What-Should-I-Eat.git"
+  },
+  "author": "Carla Bates",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CarlaB27/What-Should-I-Eat/issues"
+  },
+  "homepage": "https://github.com/CarlaB27/What-Should-I-Eat#readme"
+}
