@@ -2,18 +2,31 @@
   "name": "capstone",
   "version": "1.0.0",
   "description": "A web app to find recipes",
-  "main": "index.js",
+  "main": "src/server.js",
   "scripts": {
-    "test": "export NODE_ENV=test && jasmine"
+    "test": "set NODE_ENV=test&& jasmine",
+    "start": "node src/server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CarlaB27/What-Should-I-Eat.git"
+    "url": "https://github.com/CarlaB27/What-Should-I-Eat.git"
   },
   "author": "Carla Bates",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/CarlaB27/What-Should-I-Eat/issues"
   },
-  "homepage": "https://github.com/CarlaB27/What-Should-I-Eat#readme"
+  "homepage": "https://github.com/CarlaB27/What-Should-I-Eat#readme",
+  "devDependencies": {
+    "jasmine": "^3.4.0"
+  },
+  "dependencies": {
+    "dotenv": "^8.0.0",
+    "ejs": "^2.6.1",
+    "eslint": "^5.16.0",
+    "express": "^4.16.4",
+    "nodemon": "^1.19.0",
+    "request": "^2.88.0",
+    "unirest": "^0.6.0"
+  }
 }
