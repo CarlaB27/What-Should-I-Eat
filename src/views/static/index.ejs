@@ -1,0 +1,139 @@
+<!DOCTYPE <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <% include ./partials/header.ejs %>
+</head>
+
+<body>
+    <% include ./partials/navbar.ejs %>
+
+    <!-- Page Content -->
+    <!-- CAROUSEL?/CARD IMAGES -->
+    <section name="jumbotron">
+        <div class="jumbotron text-center">
+            <h1 class="display-4">What Should I Eat?</h1>
+            <hr class="my-4">
+            <p class="lead">A place to find recipes based on the food you already have available.</p>
+            <p class="lead">Browse thousands of recipes and discover new and amazing meals.</p>
+        </div>
+    </section>
+
+    <!-- Page Features -->
+
+
+    <!-- Popular Recipes Sidebar -->
+    <div class="container">
+        <div class="row content">
+            <div class="col-sm-2 sidenav">
+                <div class="card text-white bg-warning mb-3" style="max-width: 10rem;">
+                    <div class="card-header center-text">
+                        <h3>Popular Recipes</h3>
+                    </div>
+                    <div class="card-body text-center">
+                        <div class="btn-group-vertical" data-toggle="buttons">
+                            <button type="button" class="btn btn-warning">Breakfast</button>
+                            <button type="button" class="btn btn-warning">Lunch</button>
+                            <button type="button" class="btn btn-warning">Dinner</button>
+                            <button type="button" class="btn btn-warning">Dessert</button>
+                            <button type="button" class="btn btn-warning">Snacks</button>
+                            <button type="button" class="btn btn-warning">Drinks</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Search Form-->
+            <div class="col-sm-8">
+                <h3>Select the items you wish to use</h3>
+                <form>
+                    <fieldset>
+                        <div class="form-group">
+                            <label for="textArea">Enter food items separated by a comma</label>
+                            <textarea class="form-control" id="exampleTextarea" rows="6"></textarea>
+                        </div>
+                        <fieldset class="form-group">
+                            <legend>Meal type</legend>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1"
+                                        value="option1" checked="">
+                                    Breakfast
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2"
+                                        value="option2">
+                                    Lunch
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2"
+                                        value="option2">
+                                    Dinner
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2"
+                                        value="option2">
+                                    Dessert
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2"
+                                        value="option2">
+                                    Snacks
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2"
+                                        value="option2">
+                                    Drinks
+                                </label>
+                            </div>
+                            <fieldset>
+                                <legend>Total Preparation & Cook Time</legend>
+                                <div class="form-group">
+                                    <label for="mealTime">Select total time for meal</label>
+                                    <select class="form-control" id="mealTime">
+                                        <option>0-20 minutes</option>
+                                        <option>20-30 minutes</option>
+                                        <option>30-45 minutes</option>
+                                        <option>45-60 minutes</option>
+                                        <option>60+ minutes</option>
+                                    </select>
+                                </div>
+                            </fieldset>
+                            <button type="submit" class="btn btn-info">Find My Meal</button>
+                        </fieldset>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- footer -->
+    <% include ./partials/footer.ejs %>
+
+    <% include ./partials/baseScripts.ejs %>
+</body>
+
+</html>
