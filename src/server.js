@@ -3,6 +3,12 @@ const http = require("http");
 const port = normalizePort(process.env.PORT || "3000");
 app.set("port", port);
 const server = http.createServer(app);
+const express = require("express");
+const path = require('path');
+const public = path.join(__dirname, '/public');
+app.use('/public/images/', express.static('./public/images'));
+
+
 
 server.listen(port);
 
