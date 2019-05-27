@@ -8,10 +8,6 @@ module.exports = (sequelize, DataTypes) => {
         isEmail: { msg: "Error: must be a valid email" }
       }
     },
-    username: {
-      type: DataTypes.STRING,
-      allowNull: false
-    },
     password: {
       type: DataTypes.STRING,
       allowNull: false

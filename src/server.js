@@ -9,7 +9,6 @@ const public = path.join(__dirname, '/public');
 app.use('/public/images/', express.static('./public/images'));
 
 
-
 server.listen(port);
 
 function normalizePort(val) {

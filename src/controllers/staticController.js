@@ -1,4 +1,4 @@
-const unirest = require('unirest');
+
 
 module.exports = {
     index(req, res, next) {
@@ -7,6 +7,7 @@ module.exports = {
 }
 
 
+//const unirest = require('unirest');
 
 // unirest.get("https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/findByIngredients?number=5&ranking=1&ignorePantry=false&ingredients=apples%2Cflour%2Csugar")//TODO: INPUT BOX
 // .header("X-RapidAPI-Host", "spoonacular-recipe-food-nutrition-v1.p.rapidapi.com")

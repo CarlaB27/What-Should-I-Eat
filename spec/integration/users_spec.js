@@ -32,8 +32,7 @@ describe("routes : users", () => {
                 url: base,
                 form: {
                     email: "example@example.com",
-                    password: "123456789",
-                    username: "Mr Example"
+                    password: "123456789"
                 }
             }
             request.post(options, (err, res, body) => {
@@ -56,8 +55,7 @@ describe("routes : users", () => {
                     url: base,
                     form: {
                         username: "nope",
-                        email: "no",
-                        password: "123456789"
+                        email: "no"
                     }
                 },
                 (err, res, body) => {
