@@ -26,8 +26,8 @@ module.exports = {
             callback(null, user.id);
         });
 
-        passport.deserializeUser((id, callback) => {
-            User.findOne({ id: id })
+        passport.deserializeUser((user, callback) => {
+            User.findOne({ user: user })
                 .then((user) => {
                     callback(null, user);
                 })
